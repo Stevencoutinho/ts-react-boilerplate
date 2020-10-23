@@ -1,0 +1,43 @@
+{
+  "name": "my-react-boilerplate",
+  "version": "1.0.0",
+  "description": "this package is React-boilerplate",
+  "main": "index.jsx",
+  "repository": "https://github.com/Stevencoutinho/my-react-boilerplate.git",
+  "bugs": "",
+  "author": "Kazuya ISHIBASHI <1484kazuya12@gmail.com> (https://github.com/Stevencoutinho)",
+  "keywords": [
+    "React",
+    "template"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "echo hello, world",
+    "start": "webpack-dev-server --hot --config webpack.dev.js",
+    "build": "./node_modules/.bin/webpack --config webpack.prod.js",
+    "tsc-init": "./node_modules/.bin/tsc --init"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "css-loader": "^4.2.0",
+    "file-loader": "^6.0.0",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^4.0.0",
+    "ts-loader": "^8.0.6",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
