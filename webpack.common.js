@@ -1,6 +1,7 @@
 const path = require('path');// pathモジュール
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HardSrcWebpack = require('hard-source-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const src = path.resolve(__dirname, 'src');
 const public = path.resolve(__dirname, 'public');
@@ -22,7 +23,7 @@ module.exports = {
         use: ['html-loader']
       },
       {// js
-        test: /\.tsx$/,
+        test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
         use: [
           {
@@ -62,7 +63,8 @@ module.exports = {
       template: src + '/index.html',
       filename: 'index.html'
     }),
-    new HardSrcWebpack()
+    new HardSrcWebpack(),
+    new Dotenv(),
   ],
   resolve: {
     extensions: ['.ts', '.tsx', '.js']

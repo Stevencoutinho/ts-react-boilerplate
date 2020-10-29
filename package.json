@@ -1,13 +1,14 @@
 {
-  "name": "my-react-boilerplate",
+  "name": "ts-react-boilerplate",
   "version": "1.0.0",
-  "description": "this package is React-boilerplate",
-  "main": "index.jsx",
-  "repository": "https://github.com/Stevencoutinho/my-react-boilerplate.git",
+  "description": "TypeScript + React boilerplate",
+  "main": "index.tsx",
+  "repository": "https://github.com/Stevencoutinho/ts-react-boilerplate.git",
   "bugs": "",
   "author": "Kazuya ISHIBASHI <1484kazuya12@gmail.com> (https://github.com/Stevencoutinho)",
   "keywords": [
     "React",
+    "TypeScript",
     "template"
   ],
   "license": "MIT",
@@ -18,13 +19,16 @@
     "tsc-init": "./node_modules/.bin/tsc --init"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "css-loader": "^4.2.0",
+    "dotenv-webpack": "^5.0.0",
     "file-loader": "^6.0.0",
     "hard-source-webpack-plugin": "^0.13.1",
     "html-loader": "^1.1.0",
