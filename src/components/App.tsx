@@ -1,10 +1,10 @@
-import * as React from 'react'
+import React, { FC } from 'react'
 // import './images/icon.PNG';
 
-const App = () => {
-  const [name, setName] = React.useState('world');
+const App: FC = (): JSX.Element => {
+  const [name, setName] = React.useState<string>('world');
 
-  const handleChange = (e: any) => setName(e.target.value);
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => setName(e.target.value);
 
   return (
     <main>
