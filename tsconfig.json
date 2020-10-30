@@ -11,7 +11,8 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./*"]
     }
   },
+  "include": ["src/*", "types/*"]
 }
