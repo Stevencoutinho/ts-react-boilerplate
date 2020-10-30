@@ -1,9 +1,14 @@
+/* React */
 import React, { FC } from 'react'
-// import './images/icon.PNG';
+/* types */
+import '@/types/sample';
 
 const App: FC = (): JSX.Element => {
   const [name, setName] = React.useState<string>('world');
-
+  
+  sample = 'Hello world';
+  console.log(sample);
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => setName(e.target.value);
 
   return (
