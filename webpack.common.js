@@ -5,6 +5,7 @@ const Dotenv = require('dotenv-webpack');
 
 const src = path.resolve(__dirname, 'src');
 const public = path.resolve(__dirname, 'public');
+const root = path.resolve(__dirname);
 
 module.exports = {
   // エントリーポイントの設定
@@ -69,7 +70,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     alias: {
-      '@': src
+      '@': root
     }
   },
 };
