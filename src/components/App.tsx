@@ -1,16 +1,20 @@
 /* React */
 import React, { FC } from 'react'
 /* types */
-import '@/types/sample';
+import { test } from '@/types';
 
 const App: FC = (): JSX.Element => {
   const [name, setName] = React.useState<string>('world');
-  
-  sample = 'Hello world';
-  console.log(sample);
-  
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => setName(e.target.value);
 
+  const obj: test = {
+    id: 10,
+    name: 'aaa'
+  };
+
+  console.log(obj);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => setName(e.target.value);
+  
   return (
     <main>
       <h1 className="welcome">Hello, {name}</h1>

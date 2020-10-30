@@ -71,6 +71,7 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     alias: {
       '@': root
-    }
+    },
+    modules: [src, 'node_modules']
   },
 };
