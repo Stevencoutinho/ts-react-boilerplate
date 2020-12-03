@@ -16,19 +16,25 @@
     "test": "echo hello, world",
     "start": "webpack-dev-server --hot --config webpack.dev.js",
     "build": "./node_modules/.bin/webpack --config webpack.prod.js",
-    "tsc-init": "./node_modules/.bin/tsc --init"
+    "tsc-init": "./node_modules/.bin/tsc --init",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "axios": "^0.21.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "styled-reset": "^4.2.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.9",
     "@types/axios": "^0.14.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.6",
+    "@types/styled-components": "^5.1.4",
+    "babel-loader": "^8.2.2",
     "css-loader": "^4.2.0",
     "dotenv-webpack": "^5.0.0",
     "file-loader": "^6.0.0",
@@ -38,6 +44,7 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",
+    "styled-components": "^5.2.0",
     "terser-webpack-plugin": "^4.0.0",
     "ts-loader": "^8.0.6",
     "typescript": "^4.0.3",

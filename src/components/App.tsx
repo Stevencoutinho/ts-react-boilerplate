@@ -1,33 +1,12 @@
 /* React */
-import React, { FC } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React from 'react'
 /* Components */
-import Header from './Header';
-import Nav from './Nav';
-import Welcome from './Welcome';
-/* Store */
-import { Store, StoreProvider } from '@/src/Store';
+import Top from "./05_pages/Top";
 
-const App: FC = (): JSX.Element => {
+const App: React.FC = (): JSX.Element => {
   return (
-    <>
-      <Router>
-        <Header />
-        <Nav />
-        <main>
-          <Route exact path="/">
-              <h1>Hello, world!!</h1>
-          </Route>
-          <Route exact path="/login">
-            <StoreProvider>
-              <Welcome />
-            </StoreProvider>
-          </Route>
-        </main>
-      </Router>
-    </>
+    <Top />
   );
 };
-
 
 export default App;
