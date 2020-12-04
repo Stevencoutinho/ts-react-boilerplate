@@ -1,7 +1,7 @@
 /*========== import ==========*/
 import React from "react";
 import styled from "styled-components";
-import { Themes, Sizes, ButtonStyle } from "@/src/utils/theme";
+import { Themes, Sizes, ButtonStyle } from "../../utils/theme";
 /* type */
 interface Props {
   className?: string;
