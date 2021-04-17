@@ -1,6 +1,5 @@
 /* import  */
 import axios from "axios";
-import { process, ShopDetail, Plan } from "@/types";
 /* type */
 interface Config {
   url: string;
